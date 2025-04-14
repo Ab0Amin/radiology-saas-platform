@@ -1,0 +1,53 @@
+.dicom-view {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dicom-view:hover {
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.5);
+}
+
+.measurement-line {
+  position: absolute;
+  background-color: yellow;
+  height: 2px;
+  z-index: 10;
+}
+
+.measurement-point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+.measurement-label {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 12;
+}
+
+/* Custom scrollbar for the measurement panel */
+.measurement-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.measurement-panel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.measurement-panel::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.measurement-panel::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
